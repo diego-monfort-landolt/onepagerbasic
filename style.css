@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+   
+}
+.header {
+    width: 100%;
+    height: 14vh;
+    background: #000;
+   
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 0 0.8rem 0 #000;
+
+}
+.header .content-box {
+    background: #555;
+    display: flex;
+    position:absolute;
+    margin:2rem;
+
+    border-radius: .6rem;
+    border: none;
+    
+    box-shadow: 0.5rem 0.5rem 0.5rem #000;
+    animation: headerAnim 5s ease 0s infinite normal backwards;
+    transition: 1s all ease;
+
+   
+}
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center; 
+    padding: 3rem;
+    color: #fff;
+}
+.content h1 {
+    letter-spacing: 1px;
+    font-family: monospace, sans-serif;
+}
+.content p {
+    text-align: center;
+}
+
+.main {
+    width: 100%;
+    height: 75vh;
+    background-color: #FFF0F5;
+    box-shadow: 0 0 2rem 0 #444;
+
+    margin: 11rem 0 0 0;
+    display: flex; 
+    overflow: hidden;
+
+}
+
+.main-box-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+   
+}
+.main-box-content h2 {
+    font-size: 3rem;
+    margin: .3rem 0 0 0;
+    letter-spacing: .2rem;
+
+}
+.main-box-content p {
+    text-align: center;
+    margin: .3rem 4rem .5rem 4rem;
+}
+.main-box-content img{
+  width: 10rem;
+  height: 10rem;
+  margin: .8rem;
+
+  border: none;
+  border-radius: .8rem  0 .8rem 0;
+  object-fit: cover;
+
+  box-shadow: 0 .5rem .5rem .1rem #444;
+}
+
+.footer {
+    width: 100%;
+    height: 20vh;
+    background-color: #000;
+    color: #fff;
+    bottom: 0;
+    margin: 7rem 0 0 0;
+
+}
+.footer-cont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+
+}
+
+
+
+
+
+
+@keyframes headerAnim {
+	0% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+		transform-origin: center center;
+	}
+
+	10% {
+		animation-timing-function: ease-in;
+		transform: scale(0.91);
+	}
+
+	17% {
+		animation-timing-function: ease-out;
+		transform: scale(0.98);
+	}
+
+	33% {
+		animation-timing-function: ease-in;
+		transform: scale(0.87);
+	}
+
+	45% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+	}
+}
