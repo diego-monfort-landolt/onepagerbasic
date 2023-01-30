@@ -40,6 +40,7 @@
 .content h1 {
     letter-spacing: 1px;
     font-family: monospace, sans-serif;
+    font-size: 1.5rem;
 }
 .content p {
     text-align: center;
@@ -85,6 +86,13 @@
   object-fit: cover;
 
   box-shadow: 0 .5rem .5rem .1rem #444;
+}
+section {
+    margin: 5rem 3rem 0 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
 }
 
 .footer {
